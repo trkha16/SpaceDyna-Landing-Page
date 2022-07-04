@@ -86,7 +86,7 @@ function Navbar() {
                                 md={2}
                                 className={classes.navItemContainer}
                             >
-                                <Link to="#" className={classes.navItem}>
+                                <Link to={item.url} className={classes.navItem}>
                                     {item.title}
                                 </Link>
                             </Grid>
@@ -108,26 +108,32 @@ export default Navbar;
 const menu = [
     {
         id: 1,
+        url: "#home",
         title: "Home",
     },
     {
         id: 2,
+        url: "#about",
         title: "About Us",
     },
     {
         id: 3,
+        url: "#services",
         title: "Services",
     },
     {
         id: 4,
+        url: "#portfolio",
         title: "Portfolio",
     },
     {
         id: 5,
+        url: "#blog",
         title: "Blog",
     },
     {
         id: 6,
+        url: "#message",
         title: "Message Us",
     },
 ];
