@@ -1,5 +1,3 @@
-#Template: https://templatemo.com/templates/templatemo_562_space_dynamic/
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
