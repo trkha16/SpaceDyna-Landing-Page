@@ -10,6 +10,30 @@ const useStyles = makeStyles({
     },
     container: {
         padding: "0px 7%",
+        "&::before": {
+            position: "absolute",
+            top: "12%",
+            left: 0,
+            content: '""',
+            background:
+                "url(https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/baner-dec-left.png)",
+            width: "13%",
+            height: "60%",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+        },
+        "&::after": {
+            position: "absolute",
+            top: "12%",
+            right: 0,
+            content: '""',
+            background:
+                "url(https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/baner-dec-right.png)",
+            height: "35%",
+            width: "5.7%",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+        },
     },
     imgContainer: {
         display: "flex",
@@ -86,6 +110,9 @@ const useStyles = makeStyles({
             textAlign: "center",
             fontSize: "15px",
             fontWeight: 500,
+        },
+        "&:hover": {
+            cursor: "pointer",
         },
     },
 });
