@@ -8,6 +8,7 @@ const useStyles = makeStyles({
         position: "fixed",
         background: "#fafafa",
         boxShadow: "0px 1px 1px #eee",
+        zIndex: 100,
     },
     container: {
         padding: "0px 7%",
