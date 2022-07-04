@@ -46,7 +46,7 @@ export default function About() {
                     <Grid item md={4}>
                         <img
                             src="https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/about-left-image.png"
-                            alt="img"
+                            alt="Icon"
                         />
                     </Grid>
                     <Grid container md={8} className={classes.contentContainer}>
