@@ -33,11 +33,14 @@
 }
 
 .listArticlesContainer {
+    padding: 0px 2%;
+
     .listArticles {
         margin-bottom: 3%;
     }
     .articleItemContainer {
-        padding-right: 10%;
+        padding-right: 5%;
+        align-self: center;
         span {
             color: #afafaf;
             font-size: 15px;
@@ -45,9 +48,9 @@
             margin: 0px;
             margin-left: 3%;
         }
-        h4 {
+        h2 {
             font-size: 20px;
-            font-weight: 700;
+            font-weight: 900;
             color: #2a2a2a;
             &:hover {
                 cursor: pointer;
@@ -71,6 +74,78 @@
         }
         &:hover {
             cursor: pointer;
+        }
+    }
+}
+
+.mainArticle {
+    position: relative;
+    .banner {
+        img {
+            box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+            border-radius: 20px;
+            width: 95%;
+        }
+    }
+    .content {
+        background-color: #fff;
+        box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+        border-radius: 25px;
+        padding: 4%;
+        margin-right: 15%;
+        position: absolute;
+        bottom: 10%;
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            li {
+                display: inline-block;
+                font-size: 15px;
+                color: #afafaf;
+                font-weight: 300;
+                margin-right: 20px;
+                i {
+                    color: #ff4d61;
+                    font-size: 16px;
+                    margin-right: 8px;
+                }
+            }
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2a2a2a;
+            margin: 3.5% 0px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        p {
+            margin: 0px;
+            font-size: 15px;
+            line-height: 30px;
+            color: #2a2a2a;
+        }
+    }
+    .articleBtn {
+        width: 25%;
+        position: absolute;
+        bottom: 0px;
+        margin: 0px;
+        &:hover {
+            cursor: pointer;
+        }
+        p {
+            background-color: #03a4ed;
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff;
+            text-transform: capitalize;
+            letter-spacing: 0.25px;
+            border-radius: 25px;
+            padding: 9% 15%;
+            margin: 0px;
         }
     }
 }
