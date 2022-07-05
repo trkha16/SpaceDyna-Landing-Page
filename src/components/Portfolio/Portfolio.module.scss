@@ -1,0 +1,70 @@
+.hoverContainer {
+    position: relative;
+    z-index: 1;
+    padding: 0px 1%;
+}
+
+.hoverContainer:hover .hide {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-53%);
+}
+
+.hoverContainer:hover .show {
+    transform: translateY(53%);
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    width: inherit;
+    position: absolute;
+    border-radius: 20px;
+    text-align: center;
+    padding: 11% 9%;
+    margin-right: 5%;
+    background: linear-gradient(
+        105deg,
+        rgba(255, 77, 30, 1) 0%,
+        rgba(255, 44, 109, 1) 100%
+    );
+    color: #fff;
+    z-index: 1;
+    transition: all 0.5s;
+    h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 0px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 30px;
+        margin: 0px;
+    }
+    &::after {
+        width: 20px;
+        height: 20px;
+        content: "";
+        transform: rotate(45deg);
+        background: linear-gradient(
+            105deg,
+            rgba(255, 52, 69, 1) 0%,
+            rgba(255, 51, 78, 1) 100%
+        );
+        position: absolute;
+        bottom: -5%;
+        z-index: 1;
+    }
+}
+
+.show {
+    position: relative;
+    width: inherit;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    background: #fff;
+    text-align: center;
+    padding: 11%;
+    z-index: 1;
+    transition: all 0.5s;
+}

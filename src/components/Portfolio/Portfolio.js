@@ -1,5 +1,6 @@
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
+import styles from "./Portfolio.module.scss";
 
 const useStyles = makeStyles({
     root: {
@@ -11,7 +12,7 @@ const useStyles = makeStyles({
     },
     title: {
         width: "37%",
-        paddingBottom: "11%",
+        paddingBottom: "10%",
         textAlign: "center",
         margin: "0px auto",
         "& h4": {
@@ -31,44 +32,6 @@ const useStyles = makeStyles({
             },
         },
     },
-    show: {
-        borderRadius: "20px",
-        boxShadow: "0px 0px 10px rgb(0 0 0 / 10%)",
-        background: "#fff",
-        textAlign: "center",
-        padding: "11%",
-    },
-    hide: {
-        position: "relative",
-        borderRadius: "20px",
-        textAlign: "center",
-        padding: "11%",
-        background:
-            "linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%)",
-        color: "#fff",
-        zIndex: "2",
-        "& h4": {
-            fontSize: "20px",
-            fontWeight: 700,
-            marginTop: "0px",
-        },
-        "& p": {
-            fontSize: "15px",
-            lineHeight: "30px",
-            margin: "0px",
-        },
-        "&::after": {
-            width: "20px",
-            height: "20px",
-            content: '""',
-            transform: "rotate(45deg)",
-            background:
-                "linear-gradient(105deg, rgba(255,52,69,1) 0%, rgba(255,51,78,1) 100%)",
-            position: "absolute",
-            bottom: "-5%",
-            zIndex: "1",
-        },
-    },
 });
 
 export default function Portfolio() {
@@ -83,16 +46,21 @@ export default function Portfolio() {
                         <span> provide</span>
                     </h4>
                 </div>
-                <Grid container spacing={2}>
+                <Grid container>
                     {contents.map((item) => (
-                        <Grid item md={3} key={item.id}>
-                            <div className={classes.hide}>
+                        <Grid
+                            item
+                            md={3}
+                            key={item.id}
+                            className={styles.hoverContainer}
+                        >
+                            <div className={styles.hide}>
                                 <h4>{item.title}</h4>
                                 <p>{item.content}</p>
                             </div>
-                            {/* <div className={classes.show}>
+                            <div className={styles.show}>
                                 <img src={item.showImg} alt="img" />
-                            </div> */}
+                            </div>
                         </Grid>
                     ))}
                 </Grid>
