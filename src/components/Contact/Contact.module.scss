@@ -1,0 +1,54 @@
+.root {
+    width: 100%;
+    padding: 15% 0px;
+    background-image: url(https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    padding: 0px 7%;
+}
+
+.content {
+    color: #fff;
+    h2 {
+        font-size: 30px;
+        text-transform: capitalize;
+        font-weight: 700;
+        letter-spacing: 0.25px;
+        line-height: 44px;
+        margin: 0px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 30px;
+        margin: 0px;
+        margin-top: 4%;
+    }
+    .phone {
+        h4 {
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff;
+            span {
+                i {
+                    text-align: center;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    color: #ff3b2c;
+                    font-size: 22px;
+                    padding: 2%;
+                    margin-left: 5%;
+                    margin-right: 3%;
+                }
+                .phoneNumber {
+                    color: #fff;
+                    font-size: 15px;
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

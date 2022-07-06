@@ -133,7 +133,7 @@ const menu = [
     },
     {
         id: 6,
-        url: "#message",
+        url: "#contact",
         title: "Message Us",
     },
 ];
