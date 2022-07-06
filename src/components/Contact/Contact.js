@@ -29,7 +29,42 @@ export default function Contact() {
                             </h4>
                         </div>
                     </Grid>
-                    <Grid item md={6}></Grid>
+                    <Grid item md={6} className={styles.contactPadding}>
+                        <div className={styles.contactFormContainer}>
+                            <Grid
+                                container
+                                component="form"
+                                className={styles.contactForm}
+                            >
+                                <Grid item md={6}>
+                                    <input type="text" placeholder="Name" />
+                                </Grid>
+                                <Grid item md={6}>
+                                    <input
+                                        type="surname"
+                                        placeholder="Surname"
+                                    />
+                                </Grid>
+                                <Grid item md={12}>
+                                    <input
+                                        type="email"
+                                        placeholder="Your Email"
+                                    />
+                                </Grid>
+                                <Grid item md={12}>
+                                    <textarea
+                                        type="text"
+                                        placeholder="Message"
+                                    />
+                                </Grid>
+                            </Grid>
+                            <div className={styles.contactBtnContainer}>
+                                <Link to="#" className={styles.contactBtn}>
+                                    Send Message
+                                </Link>
+                            </div>
+                        </div>
+                    </Grid>
                 </Grid>
             </div>
         </div>
