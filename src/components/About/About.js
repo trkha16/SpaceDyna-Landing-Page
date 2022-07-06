@@ -1,47 +1,10 @@
 import { Grid } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
-
-const useStyles = makeStyles({
-    root: {
-        width: "100%",
-        background:
-            "url(https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/about-bg.png)",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        padding: "10% 0px",
-        marginTop: "10%",
-    },
-    container: {
-        padding: "0px 7%",
-    },
-    contentContainer: {
-        display: "flex",
-        alignContent: "center",
-        justifyContent: "center",
-        color: "#fff",
-        "& h5": {
-            fontSize: "20px",
-            fontWeight: 700,
-            marginTop: "0px",
-            marginBottom: "2%",
-        },
-        "& p": {
-            fontSize: "15px",
-            lineHeight: "30px",
-            margin: "0px",
-        },
-    },
-    itemContainer: {
-        marginBottom: "8%",
-    },
-});
+import styles from "./About.module.scss";
 
 export default function About() {
-    const classes = useStyles();
-
     return (
-        <div id="about" className={classes.root}>
-            <div className={classes.container}>
+        <div id="about" className={styles.root}>
+            <div className={styles.container}>
                 <Grid container>
                     <Grid item md={4}>
                         <img
@@ -49,12 +12,12 @@ export default function About() {
                             alt="Icon1"
                         />
                     </Grid>
-                    <Grid container md={8} className={classes.contentContainer}>
+                    <Grid container md={8} className={styles.contentContainer}>
                         {datas.map((item) => (
                             <Grid item md={6} key={item.id}>
                                 <Grid
                                     container
-                                    className={classes.itemContainer}
+                                    className={styles.itemContainer}
                                 >
                                     <Grid item md={3}>
                                         <img src={item.icon} alt="Img" />

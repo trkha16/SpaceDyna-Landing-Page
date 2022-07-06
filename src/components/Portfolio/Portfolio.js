@@ -1,46 +1,11 @@
 import { Grid } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
 import styles from "./Portfolio.module.scss";
 
-const useStyles = makeStyles({
-    root: {
-        width: "100%",
-        paddingTop: "8%",
-    },
-    container: {
-        padding: "0px 7%",
-    },
-    title: {
-        width: "37%",
-        paddingBottom: "10%",
-        textAlign: "center",
-        margin: "0px auto",
-        "& h4": {
-            color: "2a2a2a",
-            fontSize: "30px",
-            textTransform: "capitalize",
-            fontWeight: 800,
-            lineHeight: "44px",
-            letterSpacing: "0.25px",
-            margin: "0px",
-            "& em": {
-                fontStyle: "normal",
-                color: "#03a4ed",
-            },
-            "& span": {
-                color: "#fe3f40",
-            },
-        },
-    },
-});
-
 export default function Portfolio() {
-    const classes = useStyles();
-
     return (
-        <div id="portfolio" className={classes.root}>
-            <div className={classes.container}>
-                <div className={classes.title}>
+        <div id="portfolio" className={styles.root}>
+            <div className={styles.container}>
+                <div className={styles.title}>
                     <h4>
                         See What Our Agency <em>offers</em> {"&"} What We
                         <span> provide</span>
