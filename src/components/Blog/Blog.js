@@ -21,7 +21,7 @@ export default function Blog() {
                     </Grid>
                 </Grid>
                 <Grid container>
-                    <Grid item md={6} className={styles.mainArticle}>
+                    <Grid item xs={12} md={6} className={styles.mainArticle}>
                         <div className={styles.banner}>
                             <img
                                 src="https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/big-blog-thumb.jpg"
@@ -54,11 +54,17 @@ export default function Blog() {
                             <p>discover more</p>
                         </div>
                     </Grid>
-                    <Grid item md={6} className={styles.listArticlesContainer}>
+                    <Grid
+                        item
+                        xs={12}
+                        md={6}
+                        className={styles.listArticlesContainer}
+                    >
                         {articles.map((item) => (
                             <Grid container className={styles.listArticles}>
                                 <Grid
                                     item
+                                    xs={12}
                                     md={7}
                                     className={styles.articleItemContainer}
                                 >
@@ -69,6 +75,7 @@ export default function Blog() {
                                 </Grid>
                                 <Grid
                                     item
+                                    xs={12}
                                     md={5}
                                     className={styles.articleItemImages}
                                 >

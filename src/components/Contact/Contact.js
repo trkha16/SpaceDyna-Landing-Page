@@ -36,22 +36,22 @@ export default function Contact() {
                                 component="form"
                                 className={styles.contactForm}
                             >
-                                <Grid item md={6}>
+                                <Grid item xs={12} md={6}>
                                     <input type="text" placeholder="Name" />
                                 </Grid>
-                                <Grid item md={6}>
+                                <Grid item xs={12} md={6}>
                                     <input
                                         type="surname"
                                         placeholder="Surname"
                                     />
                                 </Grid>
-                                <Grid item md={12}>
+                                <Grid item xs={12} md={12}>
                                     <input
                                         type="email"
                                         placeholder="Your Email"
                                     />
                                 </Grid>
-                                <Grid item md={12}>
+                                <Grid item xs={12} md={12}>
                                     <textarea
                                         type="text"
                                         placeholder="Message"

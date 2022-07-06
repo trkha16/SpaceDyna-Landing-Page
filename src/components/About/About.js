@@ -14,7 +14,7 @@ export default function About() {
                     </Grid>
                     <Grid container md={8} className={styles.contentContainer}>
                         {datas.map((item) => (
-                            <Grid item md={6} key={item.id}>
+                            <Grid item xs={12} md={6} key={item.id}>
                                 <Grid
                                     container
                                     className={styles.itemContainer}
