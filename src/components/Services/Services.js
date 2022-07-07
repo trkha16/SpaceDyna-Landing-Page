@@ -6,13 +6,28 @@ export default function Services() {
         <div id="services" className={styles.root}>
             <div className={styles.container}>
                 <Grid container>
-                    <Grid item md={6}>
+                    <Grid
+                        item
+                        md={6}
+                        data-aos="slide-right"
+                        data-aos-duration="1000"
+                        data-aos-delay={0}
+                        data-aos-once="true"
+                    >
                         <img
                             src="https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/services-left-image.png"
                             alt="img"
                         />
                     </Grid>
-                    <Grid item md={6} className={styles.content}>
+                    <Grid
+                        item
+                        md={6}
+                        className={styles.content}
+                        data-aos="slide-left"
+                        data-aos-duration="1000"
+                        data-aos-delay={0}
+                        data-aos-once="true"
+                    >
                         <h4>
                             Grow Your Website With Our <em>SEO</em> Service{" "}
                             {"&"} <span>Project</span> Ideas

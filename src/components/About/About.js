@@ -6,7 +6,13 @@ export default function About() {
         <div id="about" className={styles.root}>
             <div className={styles.container}>
                 <Grid container>
-                    <Grid item md={4}>
+                    <Grid
+                        item
+                        md={4}
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-once="true"
+                    >
                         <img
                             src="https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/about-left-image.png"
                             alt="Icon1"
@@ -14,7 +20,16 @@ export default function About() {
                     </Grid>
                     <Grid container md={8} className={styles.contentContainer}>
                         {datas.map((item) => (
-                            <Grid item xs={12} md={6} key={item.id}>
+                            <Grid
+                                item
+                                xs={12}
+                                md={6}
+                                key={item.id}
+                                data-aos="fade-right"
+                                data-aos-duration="700"
+                                data-aos-delay={item.id * 150}
+                                data-aos-once="true"
+                            >
                                 <Grid
                                     container
                                     className={styles.itemContainer}

@@ -7,7 +7,15 @@ export default function Contact() {
         <div id="contact" className={styles.root}>
             <div className={styles.container}>
                 <Grid container>
-                    <Grid item md={6} className={styles.content}>
+                    <Grid
+                        item
+                        md={6}
+                        className={styles.content}
+                        data-aos="fade-right"
+                        data-aos-duration="500"
+                        data-aos-delay={100}
+                        data-aos-once="true"
+                    >
                         <h2>
                             Feel Free To Send Us A Message About Your Website
                             Needs
@@ -29,7 +37,15 @@ export default function Contact() {
                             </h4>
                         </div>
                     </Grid>
-                    <Grid item md={6} className={styles.contactPadding}>
+                    <Grid
+                        item
+                        md={6}
+                        className={styles.contactPadding}
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                        data-aos-delay={100}
+                        data-aos-once="true"
+                    >
                         <div className={styles.contactFormContainer}>
                             <Grid
                                 container

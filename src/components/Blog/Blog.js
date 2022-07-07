@@ -6,7 +6,13 @@ export default function Blog() {
     return (
         <div id="blog" className={styles.root}>
             <div className={styles.container}>
-                <Grid container>
+                <Grid
+                    container
+                    data-aos="fade-down"
+                    data-aos-duration="800"
+                    data-aos-delay={100}
+                    data-aos-once="true"
+                >
                     <Grid item md={6} className={styles.title}>
                         <h4>
                             Check Out What Is <em>trending</em> In Our Latest
@@ -20,7 +26,13 @@ export default function Blog() {
                         />
                     </Grid>
                 </Grid>
-                <Grid container>
+                <Grid
+                    container
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay={100}
+                    data-aos-once="true"
+                >
                     <Grid item xs={12} md={6} className={styles.mainArticle}>
                         <div className={styles.banner}>
                             <img

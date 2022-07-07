@@ -5,7 +5,13 @@ export default function Portfolio() {
     return (
         <div id="portfolio" className={styles.root}>
             <div className={styles.container}>
-                <div className={styles.title}>
+                <div
+                    className={styles.title}
+                    data-aos="zoom-in-up"
+                    data-aos-duration="500"
+                    data-aos-delay={1}
+                    data-aos-once="true"
+                >
                     <h4>
                         See What Our Agency <em>offers</em> {"&"} What We
                         <span> provide</span>
@@ -19,6 +25,10 @@ export default function Portfolio() {
                             md={3}
                             key={item.id}
                             className={styles.hoverContainer}
+                            data-aos="fade-up"
+                            data-aos-duration="500"
+                            data-aos-delay={item.id * 150}
+                            data-aos-once="true"
                         >
                             <div className={styles.hide}>
                                 <h4>{item.title}</h4>
