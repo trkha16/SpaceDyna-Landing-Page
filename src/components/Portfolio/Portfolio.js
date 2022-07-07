@@ -9,7 +9,7 @@ export default function Portfolio() {
                     className={styles.title}
                     data-aos="zoom-in-up"
                     data-aos-duration="500"
-                    data-aos-delay={1}
+                    data-aos-delay={300}
                     data-aos-once="true"
                 >
                     <h4>

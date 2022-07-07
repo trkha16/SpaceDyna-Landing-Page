@@ -13,7 +13,7 @@ export default function Contact() {
                         className={styles.content}
                         data-aos="fade-right"
                         data-aos-duration="500"
-                        data-aos-delay={100}
+                        data-aos-delay={300}
                         data-aos-once="true"
                     >
                         <h2>
@@ -43,7 +43,7 @@ export default function Contact() {
                         className={styles.contactPadding}
                         data-aos="fade-left"
                         data-aos-duration="800"
-                        data-aos-delay={100}
+                        data-aos-delay={300}
                         data-aos-once="true"
                     >
                         <div className={styles.contactFormContainer}>

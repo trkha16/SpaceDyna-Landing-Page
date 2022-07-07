@@ -9,9 +9,9 @@ export default function Services() {
                     <Grid
                         item
                         md={6}
-                        data-aos="slide-right"
+                        data-aos="fade-right"
                         data-aos-duration="1000"
-                        data-aos-delay={0}
+                        data-aos-delay={300}
                         data-aos-once="true"
                     >
                         <img
@@ -23,9 +23,9 @@ export default function Services() {
                         item
                         md={6}
                         className={styles.content}
-                        data-aos="slide-left"
+                        data-aos="fade-left"
                         data-aos-duration="1000"
-                        data-aos-delay={0}
+                        data-aos-delay={300}
                         data-aos-once="true"
                     >
                         <h4>

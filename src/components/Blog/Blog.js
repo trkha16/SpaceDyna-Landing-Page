@@ -10,7 +10,7 @@ export default function Blog() {
                     container
                     data-aos="fade-down"
                     data-aos-duration="800"
-                    data-aos-delay={100}
+                    data-aos-delay={300}
                     data-aos-once="true"
                 >
                     <Grid item md={6} className={styles.title}>
@@ -30,7 +30,7 @@ export default function Blog() {
                     container
                     data-aos="fade-up"
                     data-aos-duration="800"
-                    data-aos-delay={100}
+                    data-aos-delay={300}
                     data-aos-once="true"
                 >
                     <Grid item xs={12} md={6} className={styles.mainArticle}>
