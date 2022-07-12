@@ -17,7 +17,7 @@ export default function Portfolio() {
                         <span> provide</span>
                     </h4>
                 </div>
-                <Grid container>
+                <Grid container className={styles.hover}>
                     {contents.map((item) => (
                         <Grid
                             item

@@ -1,9 +1,16 @@
+@import "../mixins.scss";
+
 .root {
     width: 100%;
-    padding: 10% 0px;
+    padding: 9% 0px;
     background-image: url(https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/contact-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    @include for-tablet-portrait-up {
+        margin-top: 2rem;
+        padding: 7rem 0;
+    }
 }
 
 .container {
@@ -52,10 +59,24 @@
             }
         }
     }
+    @include for-tablet-portrait-up {
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .phone {
+            text-align: center;
+        }
+    }
 }
 
 .contactPadding {
     padding-left: 5%;
+    @include for-tablet-portrait-up {
+        padding-left: 0;
+    }
 }
 
 .contactFormContainer {
@@ -76,9 +97,12 @@
         border: none;
         font-size: 15px;
         font-weight: 300;
-        margin-bottom: 8%;
+        margin-bottom: 1rem;
         text-indent: 1em;
         outline: none;
+        @include for-tablet-portrait-up {
+            margin-bottom: 1rem;
+        }
     }
     textarea {
         width: 100%;
@@ -95,8 +119,11 @@
         color: #2a2a2a;
         padding: 2% 3%;
         margin: 0px;
-        margin-top: -4%;
+        margin-top: 0.3rem;
         margin-bottom: 6%;
+        @include for-tablet-portrait-up {
+            margin-top: 0.5rem;
+        }
     }
 }
 

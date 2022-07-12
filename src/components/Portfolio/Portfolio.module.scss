@@ -62,7 +62,6 @@
     border-radius: 20px;
     text-align: center;
     padding: 11% 9%;
-    margin-right: 5%;
     background: linear-gradient(
         105deg,
         rgba(255, 77, 30, 1) 0%,
@@ -100,6 +99,7 @@
         visibility: visible;
         display: block;
         position: static;
+        margin: 0;
         margin-bottom: 1rem;
         &::after {
             display: none;

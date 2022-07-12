@@ -9,6 +9,7 @@ export default function Contact() {
                 <Grid container>
                     <Grid
                         item
+                        sm={12}
                         md={6}
                         className={styles.content}
                         data-aos="fade-right"
@@ -39,6 +40,7 @@ export default function Contact() {
                     </Grid>
                     <Grid
                         item
+                        sm={12}
                         md={6}
                         className={styles.contactPadding}
                         data-aos="fade-left"
