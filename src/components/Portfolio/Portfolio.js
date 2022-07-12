@@ -22,6 +22,7 @@ export default function Portfolio() {
                         <Grid
                             item
                             xs={12}
+                            sm={6}
                             md={3}
                             key={item.id}
                             className={styles.hoverContainer}

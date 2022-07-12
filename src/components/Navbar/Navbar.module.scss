@@ -1,3 +1,5 @@
+@import "../mixins.scss";
+
 .root {
     width: 100%;
     position: fixed;
@@ -25,6 +27,9 @@
     display: flex;
     align-items: center;
     justify-content: right;
+    @include for-tablet-portrait-up {
+        display: none;
+    }
 }
 .contactBtn {
     text-align: center;
@@ -40,6 +45,9 @@
     transition: all 0.5s;
     &:hover {
         background: #03a4ed;
+    }
+    @include for-tablet-portrait-up {
+        display: none;
     }
 }
 .navItem {
@@ -57,4 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include for-tablet-portrait-up {
+        padding: 0 0.5em;
+    }
 }

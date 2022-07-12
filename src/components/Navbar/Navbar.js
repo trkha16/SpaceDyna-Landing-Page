@@ -1,5 +1,4 @@
 import { Grid } from "@material-ui/core";
-import { Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 
 function Navbar() {
@@ -7,13 +6,13 @@ function Navbar() {
         <div id="navbar" className={styles.root}>
             <div className={styles.container}>
                 <Grid container className={styles.nav}>
-                    <Grid item md={4}>
+                    <Grid item sm={3} md={4}>
                         <h4>
                             spac
                             <span>dyna</span>
                         </h4>
                     </Grid>
-                    <Grid container md={6}>
+                    <Grid container sm={9} md={6}>
                         {menu.map((item) => (
                             <Grid
                                 item
@@ -21,16 +20,16 @@ function Navbar() {
                                 md={2}
                                 className={styles.navItemContainer}
                             >
-                                <Link to={item.url} className={styles.navItem}>
+                                <a href={item.url} className={styles.navItem}>
                                     {item.title}
-                                </Link>
+                                </a>
                             </Grid>
                         ))}
                     </Grid>
-                    <Grid item md={2} className={styles.contact}>
-                        <Link to="#" className={styles.contactBtn}>
+                    <Grid item sm={0} md={2} className={styles.contact}>
+                        <a href="/#" className={styles.contactBtn}>
                             Contact Now
-                        </Link>
+                        </a>
                     </Grid>
                 </Grid>
             </div>

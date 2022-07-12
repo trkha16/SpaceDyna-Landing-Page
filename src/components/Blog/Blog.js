@@ -13,13 +13,13 @@ export default function Blog() {
                     data-aos-delay={300}
                     data-aos-once="true"
                 >
-                    <Grid item md={6} className={styles.title}>
+                    <Grid item sm={12} md={6} className={styles.title}>
                         <h4>
                             Check Out What Is <em>trending</em> In Our Latest
                             <span> news</span>
                         </h4>
                     </Grid>
-                    <Grid item md={6} className={styles.titleImg}>
+                    <Grid item sm={0} md={6} className={styles.titleImg}>
                         <img
                             src="https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/blog-dec.png"
                             alt="img"
@@ -33,7 +33,13 @@ export default function Blog() {
                     data-aos-delay={300}
                     data-aos-once="true"
                 >
-                    <Grid item xs={12} md={6} className={styles.mainArticle}>
+                    <Grid
+                        item
+                        xs={12}
+                        sm={12}
+                        md={6}
+                        className={styles.mainArticle}
+                    >
                         <div className={styles.banner}>
                             <img
                                 src="https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/big-blog-thumb.jpg"
@@ -69,6 +75,7 @@ export default function Blog() {
                     <Grid
                         item
                         xs={12}
+                        sm={12}
                         md={6}
                         className={styles.listArticlesContainer}
                     >

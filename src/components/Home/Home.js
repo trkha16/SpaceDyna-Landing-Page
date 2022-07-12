@@ -39,7 +39,7 @@ export default function Home() {
                             .
                         </p>
                         <Grid container className={styles.formContainer}>
-                            <Grid item md={8}>
+                            <Grid item xs={8} md={8}>
                                 <TextField
                                     id="standard-basic"
                                     fullWidth
@@ -50,8 +50,8 @@ export default function Home() {
                                     }}
                                 />
                             </Grid>
-                            <Grid item md={4} className={styles.btn}>
-                                <p>Analyze Site</p>
+                            <Grid item xs={4} md={4} className={styles.btn}>
+                                <button>Analyze Site</button>
                             </Grid>
                         </Grid>
                     </Grid>

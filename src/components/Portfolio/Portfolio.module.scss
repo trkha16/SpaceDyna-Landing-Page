@@ -1,6 +1,11 @@
+@import "../mixins.scss";
+
 .root {
     width: 100%;
     padding-top: 8%;
+    @include for-tablet-portrait-up {
+        padding-top: 15%;
+    }
 }
 .container {
     padding: 0px 7%;
@@ -26,22 +31,27 @@
             color: #fe3f40;
         }
     }
+    @include for-tablet-portrait-up {
+        width: 100%;
+        padding-bottom: 15%;
+    }
 }
 
 .hoverContainer {
     position: relative;
     z-index: 1;
     padding: 0px 1%;
-}
+    &:hover {
+        .hide {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(-53%);
+        }
 
-.hoverContainer:hover .hide {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(-53%);
-}
-
-.hoverContainer:hover .show {
-    transform: translateY(53%);
+        .show {
+            transform: translateY(53%);
+        }
+    }
 }
 
 .hide {
@@ -85,6 +95,16 @@
         bottom: -5%;
         z-index: 1;
     }
+    @include for-tablet-portrait-up {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        position: static;
+        margin-bottom: 1rem;
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .show {
@@ -97,4 +117,7 @@
     padding: 11%;
     z-index: 1;
     transition: all 0.5s;
+    @include for-tablet-portrait-up {
+        display: none;
+    }
 }

@@ -1,3 +1,5 @@
+@import "../mixins.scss";
+
 .root {
     width: 100%;
     padding-top: 10%;
@@ -25,12 +27,21 @@
         span {
             color: #fe3f40;
         }
+        @include for-tablet-portrait-up {
+            margin: 0;
+            text-align: center;
+            padding: 0 1.1rem;
+            margin-bottom: 3rem;
+        }
     }
 }
 
 .titleImg {
     text-align: right;
     margin-top: -5%;
+    @include for-tablet-portrait-up {
+        display: none;
+    }
 }
 
 .listArticlesContainer {

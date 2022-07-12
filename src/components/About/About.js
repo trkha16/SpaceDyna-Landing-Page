@@ -8,6 +8,7 @@ export default function About() {
                 <Grid container>
                     <Grid
                         item
+                        xs={12}
                         md={4}
                         data-aos="fade-up"
                         data-aos-duration="1000"
@@ -19,7 +20,12 @@ export default function About() {
                             alt="Icon1"
                         />
                     </Grid>
-                    <Grid container md={8} className={styles.contentContainer}>
+                    <Grid
+                        container
+                        xs={12}
+                        md={8}
+                        className={styles.contentContainer}
+                    >
                         {datas.map((item) => (
                             <Grid
                                 item
@@ -30,15 +36,16 @@ export default function About() {
                                 data-aos-duration="700"
                                 data-aos-delay={item.id * 150}
                                 data-aos-once="true"
+                                className={styles.content}
                             >
                                 <Grid
                                     container
                                     className={styles.itemContainer}
                                 >
-                                    <Grid item md={3}>
+                                    <Grid item xs={3} md={3}>
                                         <img src={item.icon} alt="Img" />
                                     </Grid>
-                                    <Grid item md={9}>
+                                    <Grid item xs={9} md={9}>
                                         <h5>{item.job}</h5>
                                         <p>{item.detail}</p>
                                     </Grid>

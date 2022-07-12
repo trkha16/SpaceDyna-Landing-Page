@@ -8,11 +8,13 @@ export default function Services() {
                 <Grid container>
                     <Grid
                         item
+                        xs={12}
                         md={6}
                         data-aos="fade-right"
                         data-aos-duration="1000"
                         data-aos-delay={300}
                         data-aos-once="true"
+                        className={styles.banner}
                     >
                         <img
                             src="https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/services-left-image.png"
@@ -21,6 +23,7 @@ export default function Services() {
                     </Grid>
                     <Grid
                         item
+                        xs={12}
                         md={6}
                         className={styles.content}
                         data-aos="fade-left"
