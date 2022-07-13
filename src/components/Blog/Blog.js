@@ -67,9 +67,9 @@ export default function Blog() {
                                 doer ket eismod tempor incididunt ut labore et
                                 dolore magna...
                             </p>
-                        </div>
-                        <div className={styles.articleBtn}>
-                            <p>discover more</p>
+                            <div className={styles.articleBtn}>
+                                <p>discover more</p>
+                            </div>
                         </div>
                     </Grid>
                     <Grid
@@ -83,7 +83,7 @@ export default function Blog() {
                             <Grid container className={styles.listArticles}>
                                 <Grid
                                     item
-                                    xs={12}
+                                    sm={8}
                                     md={7}
                                     className={styles.articleItemContainer}
                                 >
@@ -94,7 +94,7 @@ export default function Blog() {
                                 </Grid>
                                 <Grid
                                     item
-                                    xs={12}
+                                    sm={4}
                                     md={5}
                                     className={styles.articleItemImages}
                                 >
