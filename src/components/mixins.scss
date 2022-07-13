@@ -1,10 +1,10 @@
 @mixin for-phone-only {
-    @media (max-width: 599px) and (max-width: 599px) {
+    @media (max-width: 767px) {
         @content;
     }
 }
 @mixin for-tablet-portrait-up {
-    @media (min-width: 600px) and (max-width: 899px) {
+    @media (min-width: 768px) and (max-width: 899px) {
         @content;
     }
 }

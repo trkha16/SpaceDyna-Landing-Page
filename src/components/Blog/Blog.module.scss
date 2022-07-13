@@ -7,6 +7,9 @@
 
 .container {
     padding: 0px 7%;
+    @include for-phone-only {
+        padding: 0px 2%;
+    }
 }
 
 .title {
@@ -33,6 +36,12 @@
             padding: 0 1.1rem;
             margin-bottom: 3rem;
         }
+        @include for-phone-only {
+            margin: 0;
+            text-align: center;
+            padding: 0 1.1rem;
+            margin-bottom: 3rem;
+        }
     }
 }
 
@@ -42,6 +51,9 @@
     @include for-tablet-portrait-up {
         display: none;
     }
+    @include for-phone-only {
+        display: none;
+    }
 }
 
 .listArticlesContainer {
@@ -49,6 +61,9 @@
 
     .listArticles {
         margin-bottom: 3%;
+        @include for-phone-only {
+            padding-top: 10%;
+        }
     }
     .articleItemContainer {
         padding-right: 5%;
@@ -78,6 +93,9 @@
             color: #ff4d61;
             font-size: 16px;
         }
+        @include for-phone-only {
+            width: 100%;
+        }
     }
     .articleItemImages {
         text-align: right;
@@ -86,9 +104,16 @@
             @include for-tablet-portrait-up {
                 width: 100%;
             }
+            @include for-phone-only {
+                width: 100%;
+            }
         }
         &:hover {
             cursor: pointer;
+        }
+        @include for-phone-only {
+            width: 100%;
+            margin-top: 5%;
         }
     }
 }
@@ -102,6 +127,11 @@
             width: 95%;
         }
         @include for-tablet-portrait-up {
+            img {
+                width: 100%;
+            }
+        }
+        @include for-phone-only {
             img {
                 width: 100%;
             }
@@ -151,6 +181,14 @@
             margin-right: 0;
             position: relative;
         }
+        @include for-phone-only {
+            margin-right: 0;
+            position: relative;
+            padding: 13%;
+            h4 {
+                margin-top: 5%;
+            }
+        }
     }
     .articleBtn {
         width: 26%;
@@ -178,6 +216,12 @@
             bottom: -0.5rem;
             margin-top: 1.5rem;
             margin-bottom: 1rem;
+        }
+        @include for-phone-only {
+            width: 60%;
+            position: relative;
+            bottom: -0.5rem;
+            margin-top: 1.5rem;
         }
     }
 }

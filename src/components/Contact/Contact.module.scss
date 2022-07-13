@@ -11,10 +11,17 @@
         margin-top: 2rem;
         padding: 7rem 0;
     }
+    @include for-phone-only {
+        margin-top: 2rem;
+        padding: 7rem 0;
+    }
 }
 
 .container {
     padding: 0px 7%;
+    @include for-phone-only {
+        padding: 0px 2%;
+    }
 }
 
 .content {
@@ -70,11 +77,31 @@
             text-align: center;
         }
     }
+    @include for-phone-only {
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .phone {
+            text-align: center;
+            span {
+                display: block;
+                i {
+                    padding: 0.7rem !important;
+                }
+            }
+        }
+    }
 }
 
 .contactPadding {
     padding-left: 5%;
     @include for-tablet-portrait-up {
+        padding-left: 0;
+    }
+    @include for-phone-only {
         padding-left: 0;
     }
 }

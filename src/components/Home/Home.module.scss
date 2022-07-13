@@ -8,9 +8,15 @@
     @include for-tablet-portrait-up {
         padding-top: 21%;
     }
+    @include for-phone-only {
+        padding-top: 10rem;
+    }
 }
 .container {
     padding: 0px 7%;
+    @include for-phone-only {
+        padding: 0 2%;
+    }
     &::before {
         position: absolute;
         top: 12%;
@@ -57,20 +63,14 @@
         align-items: center;
         padding-top: 10%;
     }
+    @include for-phone-only {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+    }
 }
 .title {
-    @include for-tablet-portrait-up {
-        padding-right: 0;
-        h6 {
-            text-align: center;
-        }
-        h2 {
-            text-align: center;
-        }
-        p {
-            text-align: center;
-        }
-    }
     padding-right: 5%;
     align-self: center;
     h6 {
@@ -104,6 +104,30 @@
         line-height: 30px;
         font-weight: 400;
         margin-top: 5%;
+    }
+    @include for-tablet-portrait-up {
+        padding-right: 0;
+        h6 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    @include for-phone-only {
+        padding-right: 0;
+        h6 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
     }
 }
 .titleLink {
@@ -149,6 +173,12 @@
         cursor: pointer;
     }
     @include for-tablet-portrait-up {
+        button {
+            padding: 1rem 2rem;
+        }
+    }
+    @include for-phone-only {
+        width: 100%;
         button {
             padding: 1rem 2rem;
         }

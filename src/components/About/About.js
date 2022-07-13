@@ -14,6 +14,7 @@ export default function About() {
                         data-aos-duration="1000"
                         data-aos-delay="300"
                         data-aos-once="true"
+                        className={styles.banner}
                     >
                         <img
                             src="https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/about-left-image.png"

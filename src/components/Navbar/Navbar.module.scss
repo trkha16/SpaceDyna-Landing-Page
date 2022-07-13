@@ -8,10 +8,12 @@
     z-index: 100;
 }
 .container {
+    width: 100%;
     padding: 0px 7%;
 }
 .nav {
     cursor: pointer;
+    width: 100%;
     h4 {
         font-size: 24px;
         color: #03a4ed;
@@ -28,6 +30,9 @@
     align-items: center;
     justify-content: right;
     @include for-tablet-portrait-up {
+        display: none;
+    }
+    @include for-phone-only {
         display: none;
     }
 }
@@ -49,8 +54,18 @@
     @include for-tablet-portrait-up {
         display: none;
     }
+    @include for-phone-only {
+        display: none;
+    }
 }
-.navItem {
+.navItemContainer {
+    display: flex;
+    justify-content: space-between;
+    @include for-phone-only {
+        display: none;
+    }
+}
+.navLink {
     text-decoration: none;
     font-weight: 500;
     font-size: 15px;
@@ -60,12 +75,18 @@
     &:hover {
         color: #fe3f40;
     }
+    @include for-phone-only {
+        display: none;
+    }
 }
-.navItemContainer {
+.navItem {
     display: flex;
     align-items: center;
     justify-content: center;
     @include for-tablet-portrait-up {
-        padding: 0 0.5em;
+        padding: 0 0.3em;
+    }
+    @include for-phone-only {
+        display: none;
     }
 }

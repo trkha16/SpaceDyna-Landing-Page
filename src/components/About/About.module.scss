@@ -10,6 +10,9 @@
     @include for-tablet-portrait-up {
         background: none;
     }
+    @include for-phone-only {
+        background: none;
+    }
 }
 
 .container {
@@ -21,6 +24,14 @@
         align-items: center;
         align-content: center;
         margin: 0 auto;
+    }
+    @include for-phone-only {
+        padding: 0px 2%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 }
 
@@ -44,6 +55,10 @@
         align-content: center;
         justify-content: center;
     }
+    @include for-phone-only {
+        align-content: center;
+        justify-content: center;
+    }
 }
 
 .content {
@@ -56,11 +71,36 @@
         margin-bottom: 2rem !important;
         border-radius: 25px;
     }
+    @include for-phone-only {
+        background: linear-gradient(
+            105deg,
+            rgba(255, 77, 30, 1) 0%,
+            rgba(255, 44, 109, 1) 100%
+        );
+        margin-bottom: 2rem !important;
+        border-radius: 25px;
+    }
+}
+
+.banner {
+    @include for-phone-only {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
 }
 
 .itemContainer {
     margin-bottom: 8%;
     @include for-tablet-portrait-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4%;
+        height: 100%;
+    }
+    @include for-phone-only {
         display: flex;
         justify-content: center;
         align-items: center;

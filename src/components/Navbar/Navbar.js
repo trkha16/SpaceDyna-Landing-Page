@@ -6,27 +6,33 @@ function Navbar() {
         <div id="navbar" className={styles.root}>
             <div className={styles.container}>
                 <Grid container className={styles.nav}>
-                    <Grid item sm={3} md={4}>
+                    <Grid item xs={5} sm={3} md={4}>
                         <h4>
                             spac
                             <span>dyna</span>
                         </h4>
                     </Grid>
-                    <Grid container sm={9} md={6}>
+                    <Grid
+                        container
+                        xs={0}
+                        sm={9}
+                        md={6}
+                        className={styles.navItemContainer}
+                    >
                         {menu.map((item) => (
                             <Grid
                                 item
                                 key={item.id}
                                 md={2}
-                                className={styles.navItemContainer}
+                                className={styles.navItem}
                             >
-                                <a href={item.url} className={styles.navItem}>
+                                <a href={item.url} className={styles.navLink}>
                                     {item.title}
                                 </a>
                             </Grid>
                         ))}
                     </Grid>
-                    <Grid item sm={0} md={2} className={styles.contact}>
+                    <Grid item xs={0} sm={0} md={2} className={styles.contact}>
                         <a href="/#" className={styles.contactBtn}>
                             Contact Now
                         </a>
