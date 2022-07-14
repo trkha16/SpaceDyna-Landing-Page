@@ -23,6 +23,7 @@ export default function Home() {
                         data-aos="slide-right"
                         data-aos-duration="1000"
                         data-aos-delay="500"
+                        data-aos-once="true"
                     >
                         <h6>welcome to space dynamic</h6>
                         <h2>
@@ -68,6 +69,7 @@ export default function Home() {
                         data-aos="slide-left"
                         data-aos-duration="1000"
                         data-aos-delay="0"
+                        data-aos-once="true"
                     >
                         <img
                             src="https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/banner-right-image.png"
